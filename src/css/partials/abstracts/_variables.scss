@@ -1,0 +1,92 @@
+/*
+  Project variables
+  =================
+*/
+
+
+/*
+  Flex Sass grid generator variables
+  ==================================
+*/
+
+$base-font-size:              16px;
+$grid-columns:                12 !default;
+$grid-gutter-width:           30px !default;
+
+
+$screen-xs:                   0; // Extra small screen / phone
+$screen-md:                   767px; // Medium screen / tablet
+$screen-xl:                   1279px; // Extra large screen / wide desktop
+
+$container-max-widths: (
+        xl:                   1200px
+) !default;
+
+$grid-breakpoints: (
+        xs:                   0,
+        md:                   768px,
+        xl:                   1280px
+) !default;
+
+
+// $mq-breakpoints: (
+//         xs:                   0px,
+//         sm:                   540px,
+//         md:                   768px,
+//         lg:                   1024px,
+//         xl:                   1280px
+// ) !default;
+
+
+
+//------------------------------------------------------------------------------
+//  Colors
+//------------------------------------------------------------------------------
+
+
+// Color table
+
+$white:                       #ffffff;
+$black:                       #000000;
+
+$red:                         #ff5c5c;
+$blue:                        #81b3d2;
+
+$grey:                        #f2f2f2;
+$grey-bg-icon:                #e6e6e6;
+$grey-dark:                   #333333;
+
+
+// Colors in use
+
+$body-bg:                     $white;
+$text-color:                  $black;
+
+$text-grey:                   $grey-dark;
+$text-white:                  $white;
+
+
+//------------------------------------------------------------------------------
+//  Typography
+//------------------------------------------------------------------------------
+
+
+// $font-family:                   'Proxima Nova Regular', Helvetica, Arial, sans-serif;
+// $font-family--light:            'Proxima Nova Light', Helvetica, Arial, sans-serif;
+// $font-family--bold:             'Proxima Nova Bold', Helvetica, Arial, sans-serif;
+
+
+// $font-family--serif:          Georgia, "Times New Roman", Times, serif;
+// $font-family--monospace:      Menlo, Monaco, Consolas, "Courier New", monospace;
+
+
+
+$font-size:                   18px;
+
+
+$font-size-small:             14px;
+
+
+
+
+

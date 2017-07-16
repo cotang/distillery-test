@@ -1,0 +1,26 @@
+mixin header()
+
+  // Header
+  +b.HEADER.header
+    +b.A.hamburger(href="#")
+      svg(width='23', height='21')
+        use(xmlns:xlink='http://www.w3.org/1999/xlink', xlink:href='#icon-menu')
+
+    // Nav
+    +b.NAV.nav
+      +b.A.close(href="#")
+        svg(width='23', height='22')
+          use(xmlns:xlink='http://www.w3.org/1999/xlink', xlink:href='#icon-cross')
+      +e.UL.list
+        +e.item
+          a(href="#") Главная
+        +e.item
+          a(href="#") Фото и видео
+        +e.item
+          a(href="#") Форма отзыва
+        +e.item
+          a(href="#") HTML Academy
+
+    // Logo
+    +b.A.logo(href="index.html")
+

@@ -1,0 +1,45 @@
+.banner{
+  background-image: url('../img/banner.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 160px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  user-select: none;
+  @media (min-width: $screen-md){
+    min-height: 290px;
+  }
+  @media (min-width: $screen-xl){
+    min-height: 305px;
+  }
+
+  &:after{
+    content: '';
+    display: block;
+    background-image: url('../img/banner-white-bottom.svg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: 0;
+    height: 57px;
+    width: 100%;
+  }
+  &__title{
+    margin-top: 10px;
+    color: transparent;
+    background-image: url('../img/text-sedona.svg');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 230px;
+    height: 40px;
+    @media (min-width: $screen-md){
+      width: 458px;
+      height: 78px;
+    }
+  }
+}

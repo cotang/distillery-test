@@ -1,0 +1,85 @@
+.footer{
+  padding-top: 40px;
+  text-align: center;
+  @media (min-width: $screen-md){
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 90px 60px 40px;
+  }
+  @media (min-width: $screen-xl){
+    padding: 100px 120px 40px;
+  }
+
+  &__hashtag{
+    margin: 35px 0 30px;
+    @media (min-width: $screen-md){
+      margin: 0;
+    }
+    a{
+      font-size: 21px;
+      @include font-family('PT Sans Regular', bold, normal);
+      text-transform: uppercase;
+      &:hover, &:focus{
+        color: $blue;
+      }
+      &:active{
+        color: $grey-dark;
+      }
+    }
+  }
+
+  &__copyright{
+    margin: 40px 0 20px;
+    @media (min-width: $screen-md){
+      margin: 0;
+    }
+    a{
+      font-size: 14px;
+      text-transform: uppercase;
+
+      &:hover, &:focus{
+        color: $blue;
+        svg{
+          @include transition();
+          fill: $blue;
+        }
+      }
+      &:active{
+        color: $grey-dark;
+        svg{
+          fill: $grey-dark;
+        }
+      }
+
+      svg{
+        padding-left: 5px;
+        display: inline-block;
+        vertical-align: middle;
+      }
+    }
+  }
+}
+
+.social{
+  &__link{
+    background-color: $blue;
+    display: inline-block;
+    width: 46px;
+    height: 48px;
+    vertical-align: top;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    &:hover, &:focus{
+      background-color: #669ec0;
+    }
+    &:active{
+      background-color: #5496bd;
+      svg{
+        @include transition();
+        opacity: 0.3;
+      }
+    }
+  }
+}
